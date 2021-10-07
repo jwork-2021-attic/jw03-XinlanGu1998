@@ -22,22 +22,16 @@ public class Scene {
 
         Geezer theGeezer = Geezer.getTheGeezer();
 
-        SteganographyClassLoader loader = new SteganographyClassLoader(
-                new URL("file:./example.QuickSorter.png"));
+        String className = args[0];
+        String fullName = "example."+className;
+        String url = "file:"+fullName+".png";
 
-        Class c = loader.loadClass("example.QuickSorter");
+        SteganographyClassLoader loader = new SteganographyClassLoader(
+                new URL(url));
+
+        Class c = loader.loadClass(fullName);
         System.out.println(c.getClassLoader());
         Sorter sorter = (Sorter) c.newInstance();
-
-       //SteganographyFactory.getSteganography("example/QuickSorter.java", "example/resources/bubble.jpeg");
-        /*
-        BufferedImage bi = ImageIO.read(new URL("example/resources/bubble.jpeg"));
-        SteganographyEncoder encoder = new SteganographyEncoder(bi);
-        BufferedImage quickSorterImg = encoder.encodeFile(new File("example/QuickSorter.class"));
-        ImageIO.write(bi, "png", new File("./QuickSorter.png"));
-        */
-        //Sorter quickSorter = new QuickSorter();
-
         theGeezer.setSorter(sorter);
 
         String log = theGeezer.lineUp(line);

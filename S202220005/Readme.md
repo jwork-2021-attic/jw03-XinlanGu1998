@@ -18,18 +18,19 @@ System.out.println(c.getClassLoader());
 自定义的SteganographyClassLoader，并没有真正从图片加载。只有当QuickSorter.class从本项目中移除后这里才会打印SteganographyClassLoader，说明是优先使用父ClassLoader（内层），失败时才会使用子ClassLoader（外层）。
 
 ## 任务二
-用自己在`W02`中实现的两个排序算法生成的隐写图片：
-图床URL：
-QuickSorter: https://tva1.sinaimg.cn/large/008i3skNgy1gv6owgoujzj60p00e6q4502.jpg
 
-本地：
-`jw03-XinlanGu1998/example.QuickSorter.png`
-`jw03-XinlanGu1998/example.HeapSorter.png`
+原图：
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gv6qyy1g7gj60p00e642502.jpg)
+隐写后：
+QuickSorter: `jw03-XinlanGu1998/example.QuickSorter.png`
+HeapSorter: `jw03-XinlanGu1998/example.HeapSorter.png`
 ## 任务三
-用你的图片给`W02`中example的老头赋予排序能力，得到排序结果（动画），上传动画到asciinema，在markdown中给出两个动画的链接。
 排序结果：
-QuickSorter：
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gv6oy1nem9j60je09idgn02.jpg)
-
+QuickSorter:
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gv6r5g9qmrj60j609emy002.jpg)
+HeapSorter:
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gv6qxmf1k1j60j60aaab602.jpg)
 ## 任务四
-联系另一位同学，用他的图片给`W02`中example的老头赋予排序能力，在markdown中记录你用的谁的图片，得到结果是否正确。
+冒昧借用了[@halipai同学](https://github.com/jwork-2021/jw03-halipai/tree/main/jw03-halipai)的SelectSorter:
+排序结果：
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gv6rfn3fhpj60j805m3yw02.jpg)
