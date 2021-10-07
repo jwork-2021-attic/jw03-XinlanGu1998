@@ -3,8 +3,7 @@
 
 下图中有一些泡泡
 
-![](https://raw.githubusercontent.com/jwork-2021/jw03/main/example/resources/bubble.jpeg)
-
+![](./example/resources/bubble.jpeg)
 
 下图中也有一些泡泡
 

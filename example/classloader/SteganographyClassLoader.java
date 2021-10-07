@@ -29,6 +29,7 @@ public class SteganographyClassLoader extends ClassLoader {
 
             SteganographyEncoder encoder = new SteganographyEncoder(img);
             byte[] bytes = encoder.decodeByteArray();
+            System.out.println("SteganographyClassLoader.findClass");
             return this.defineClass(name, bytes, 0, bytes.length);
         } catch (Exception e) {
             throw new ClassNotFoundException();

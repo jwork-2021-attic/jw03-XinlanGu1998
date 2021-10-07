@@ -22,7 +22,7 @@ public class SteganographyEncoder {
         setBitsFromColor(bitsFromColor);
         this.bi = bufferedImage;
     }
-
+    //将message string encode到BufferedImage上
     public BufferedImage encodeString(String message) throws IllegalArgumentException {
         if (message == null || message.length() == 0) {
             throw new IllegalArgumentException("Message can not be empty!");
@@ -70,6 +70,7 @@ public class SteganographyEncoder {
         return sb.toString();
     }
 
+    //将file的输入encode到image上
     public BufferedImage encodeFile(File file) throws IOException {
         byte[] bytes = IOUtils.toByteArray(new FileInputStream(file));
         byte[] sizeBytes = intToByteArray(bytes.length);
@@ -135,6 +136,7 @@ public class SteganographyEncoder {
         return Math.floorDiv(nrOfPixels * bitsFromColor * 3, 8);
     }
 
+    //将一组bytes encode到图片上返回
     private BufferedImage encode(byte[] bytes) {
         int[] pixels = this.bi.getRGB(0, 0, this.bi.getWidth(), this.bi.getHeight(), null, 0, this.bi.getWidth());
         int maxNoOfBytes = getMaxNoOfBytes();
