@@ -25,9 +25,9 @@ System.out.println(c.getClassLoader());
 
 隐写后：
 
-QuickSorter: `jw03-XinlanGu1998/example.QuickSorter.png`
+QuickSorter: https://github.com/jwork-2021/jw03-XinlanGu1998/blob/main/example.QuickSorter.png
 
-HeapSorter: `jw03-XinlanGu1998/example.HeapSorter.png`
+HeapSorter: https://github.com/jwork-2021/jw03-XinlanGu1998/blob/main/example.HeapSorter.png
 ## 任务三
 排序结果：
 QuickSorter:
