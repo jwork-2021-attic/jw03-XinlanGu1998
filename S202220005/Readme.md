@@ -20,17 +20,28 @@ System.out.println(c.getClassLoader());
 ## 任务二
 
 原图：
+
 ![](https://tva1.sinaimg.cn/large/008i3skNgy1gv6qyy1g7gj60p00e642502.jpg)
+
 隐写后：
+
 QuickSorter: `jw03-XinlanGu1998/example.QuickSorter.png`
+
 HeapSorter: `jw03-XinlanGu1998/example.HeapSorter.png`
 ## 任务三
 排序结果：
 QuickSorter:
+
 ![](https://tva1.sinaimg.cn/large/008i3skNgy1gv6r5g9qmrj60j609emy002.jpg)
+
 HeapSorter:
+
 ![](https://tva1.sinaimg.cn/large/008i3skNgy1gv6qxmf1k1j60j60aaab602.jpg)
+
 ## 任务四
+
 冒昧借用了[@halipai同学](https://github.com/jwork-2021/jw03-halipai/tree/main/jw03-halipai)的SelectSorter:
+
 排序结果：
+
 ![](https://tva1.sinaimg.cn/large/008i3skNgy1gv6rfn3fhpj60j805m3yw02.jpg)
